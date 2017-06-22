@@ -1,7 +1,6 @@
 brief introduction
 Our code includes 4 parts. First of all, we conduct a pre-processing step. We generate 32-frame videos, Then we use two models for feature learning and extraction. We use C3D[1] to extract features of uniform sampled RGB, depth and flow data and weighted RGB data. Meanwhile, we also use Temporal segment network (TSN)[2] to extract features for depth and flow data. After that, we get multimodal features of RGB_32_train_fet,depth_32_train_fet,flow_32_train_fet,RGB_32_test_fet,depth_32_test_fet and flow_32_test_fet, RGB_section_32_train_fet and RGB_32_test_fet via C3D model, and depth_train_avg_3,depth_test_avg_3,flow_train_avg_3 and flow_test_avg_3. Then the features are blended by the below strategy: the uniform sampled RGB feature and weighted sampled RGB feature are fused by addition, as well as the depth and flow features extracted by TSN. Then these features are blended by stacking. Finally the features are used for classification by SVM classifier to get the ultimate prediction label.
-======================================================================================
-
+------------------------------------------
 test environment
 hardware
 	CPU: Intel Core i7-6700 CPU @ 3.40GHz ¡Á8
@@ -12,7 +11,7 @@ software
 	    Linux Ubuntu 14.04 LTS
 	Matlab R2015b +
         opencv 3.0+ vs2015
-======================================================================================
+-------------------------------------------
 execute details
 The details of purposes and steps to run of each module are revealed here.
 
