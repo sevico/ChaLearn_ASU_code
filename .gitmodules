@@ -1,7 +1,6 @@
-[submodule "lib/dense_flow"]
-	path = temporal-segment-networks/lib/dense_flow
-	url = https://github.com/yjxiong/dense_flow
-[submodule "lib/caffe_action"]
+[submodule "temporal-segment-networks/lib/caffe-action"]
 	path = temporal-segment-networks/lib/caffe-action
 	url = https://github.com/sevico/caffe
-	branch=action_recog
+[submodule "temporal-segment-networks/lib/dense_flow"]
+	path = temporal-segment-networks/lib/dense_flow
+	url = https://github.com/yjxiong/dense_flow
