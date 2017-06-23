@@ -16,7 +16,6 @@
 *.a
 
 # Compiled protocol buffers
-*_pb2.py
 
 # Compiled python
 *.pyc
