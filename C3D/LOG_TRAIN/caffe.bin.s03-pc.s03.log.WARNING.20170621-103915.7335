@@ -1,0 +1,4 @@
+Log file created at: 2017/06/21 10:39:15
+Running on machine: s03-pc
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F0621 10:39:15.997665  7335 io.cpp:36] Check failed: fd != -1 (-1 vs. -1) File not found: c3d_finetuning/solver_depth_1024.prototxt

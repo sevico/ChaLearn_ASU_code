@@ -1,0 +1,4 @@
+Log file created at: 2017/06/21 10:39:28
+Running on machine: s03-pc
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F0621 10:39:28.119320  7340 solver.cpp:432] Cannot write to snapshot prefix './snapshot/my_weight_rgb_1024'.  Make sure that the directory exists and is writeable.

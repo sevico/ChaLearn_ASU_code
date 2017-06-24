@@ -1,0 +1,4 @@
+Log file created at: 2017/06/21 10:57:01
+Running on machine: s03-pc
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F0621 10:57:01.626514  7849 syncedmem.cpp:71] Check failed: error == cudaSuccess (2 vs. 0)  out of memory

@@ -1,0 +1,6 @@
+Log file created at: 2017/06/21 17:25:54
+Running on machine: tian--M
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0621 17:25:54.006150 27793 image_io.cpp:146] Cannot open /hom/home/tian/fanyingying/C3D-master/data/IsoGD_32frames_train_and_valid/train/RGB/096/M_19007.avi
+E0621 17:25:54.006304 27793 image_io.cpp:234] Cannot open /hom/home/tian/fanyingying/C3D-master/data/IsoGD_32frames_train_and_valid/train/RGB/096/M_19007.avi
+F0621 17:25:54.006319 27793 video_data_layer.cpp:161] Check failed: ReadVideoToVolumeDatum((root_folder + file_list_[id]).c_str(), start_frm_list_[id], label_list_[id], new_length, new_height, new_width, sampling_rate, &datum) 

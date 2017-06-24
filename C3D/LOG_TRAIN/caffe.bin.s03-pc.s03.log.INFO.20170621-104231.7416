@@ -1,0 +1,25 @@
+Log file created at: 2017/06/21 10:42:31
+Running on machine: s03-pc
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0621 10:42:31.123980  7416 caffe.cpp:218] Using GPUs 0
+I0621 10:42:31.127624  7416 caffe.cpp:223] GPU 0: Tesla K40c
+I0621 10:42:31.778949  7416 solver.cpp:44] Initializing solver from parameters: 
+base_lr: 0.001
+display: 20
+max_iter: 100000
+lr_policy: "step"
+gamma: 0.9
+momentum: 0.9
+weight_decay: 0.0005
+stepsize: 5000
+snapshot: 5000
+snapshot_prefix: "models/rgb/c3d_iso_rgb_1024"
+solver_mode: GPU
+device_id: 0
+net: "train_resnet18_rgb_1024.prototxt"
+train_state {
+  level: 0
+  stage: ""
+}
+I0621 10:42:31.779055  7416 solver.cpp:87] Creating training net from net file: train_resnet18_rgb_1024.prototxt
+F0621 10:42:31.779073  7416 io.cpp:36] Check failed: fd != -1 (-1 vs. -1) File not found: train_resnet18_rgb_1024.prototxt

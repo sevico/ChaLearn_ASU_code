@@ -1,0 +1,4 @@
+Log file created at: 2017/06/21 17:11:54
+Running on machine: tian--M
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F0621 17:11:54.566725 27563 video_data_layer.cpp:161] Check failed: ReadVideoToVolumeDatum((root_folder + file_list_[id]).c_str(), start_frm_list_[id], label_list_[id], new_length, new_height, new_width, sampling_rate, &datum) 

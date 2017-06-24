@@ -1,0 +1,24 @@
+Log file created at: 2017/06/21 10:39:41
+Running on machine: s03-pc
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0621 10:39:41.342762  7354 caffe.cpp:218] Using GPUs 0
+I0621 10:39:41.346468  7354 caffe.cpp:223] GPU 0: Tesla K40c
+I0621 10:39:41.885821  7354 solver.cpp:44] Initializing solver from parameters: 
+base_lr: 0.001
+display: 20
+max_iter: 100000
+lr_policy: "step"
+gamma: 0.9
+momentum: 0.9
+weight_decay: 0.0005
+stepsize: 5000
+snapshot: 5000
+snapshot_prefix: "./snapshot/my_weight_rgb_1024"
+solver_mode: GPU
+device_id: 0
+net: "train_resnet18_r2_1024.prototxt"
+train_state {
+  level: 0
+  stage: ""
+}
+F0621 10:39:41.885927  7354 solver.cpp:432] Cannot write to snapshot prefix './snapshot/my_weight_rgb_1024'.  Make sure that the directory exists and is writeable.
