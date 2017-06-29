@@ -13,7 +13,7 @@ layer {
     mirror: true
   }
   video_data_param {
-    source: "data/data_source/train_RGB_32frames_whole.txt"
+    source: "data/data_source/train_RGB_section_32frames_whole.txt"
     #root_folder: "/home/tian/C3D-v1.1/examples/c3d_ucf101_finetuning/UCF_101img/"  
     new_length: 32
     #sampling_rate: 2

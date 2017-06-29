@@ -1,0 +1,20 @@
+net: "examples/c3d_finetuning/train_resnet18_depth_filtered_1024.prototxt"
+#test_iter: 100
+#test_state: { stage: 'test-on-train' }
+#test_iter: 100
+#test_state: { stage: 'test-on-val' }
+#test_interval: 5000
+base_lr: 0.001
+momentum: 0.9
+weight_decay: 0.0005
+lr_policy: "step"
+gamma: 0.9
+stepsize: 5000
+# Display every 20 iterations
+display: 20
+# The maximum number of iterations
+max_iter: 120000
+# snapshot intermediate results
+snapshot: 5000
+snapshot_prefix: "models/depth_filtered/c3d_iso_depth_filtered_1024"
+solver_mode: GPU

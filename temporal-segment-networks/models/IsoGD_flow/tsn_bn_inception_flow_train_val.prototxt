@@ -32,7 +32,7 @@ layer {
   top: "data"
   top: "label"
   video_data_param {
-    source: "../../data/Iso_flow_train_split1.txt"
+    source: "data/Iso_flow_train_split1.txt"
     batch_size: 1
     new_length: 5
     num_segments: 2

@@ -1,4 +1,4 @@
-net: "models/IsoGD/tsn_bn_inception_flow_train_val.prototxt"
+net: "models/IsoGD_flow/tsn_bn_inception_flow_train_val.prototxt"
 
 # testing parameter
 test_iter: 100
