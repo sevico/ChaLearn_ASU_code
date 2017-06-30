@@ -9,6 +9,7 @@ clc
 feats = dir('./features/');
 for i=3:length(feats)
     load(['./features/',feats(i).name]);
+    disp(['load feature ',feats(i).name, 'done！']);
 end
 
 % if the tsn features are not added in the  folder "features", you must load them manually.
@@ -19,8 +20,8 @@ end
 
 
  [r1train,r1test]=ccaFuse(rgb_32_train_fet,rgb_filtered_32_train_fet,rgb_32_test_fet,rgb_filtered_32_test_fet);
- [d1train,d1test]=ccaFuse(depth_32_train_fet,depth_section_32_train_fet,depth_32_test_fet,depth_section_32_test_fet);
- [d3train,d3test]=ccaFuse(d1train,depth_filtered_32_train_fet,d1test,depth_filtered_32_test_fet);
+ [d1train,d1test]=ccaFuse(depth_32_train_fet,depth_filtered_32_train_fet,depth_32_test_fet,depth_filtered_32_test_fet);
+ [d3train,d3test]=ccaFuse(d1train,depth_section_32_train_fet,d1test,depth_section_32_test_fet);
  clear d1train  d1test 
  clear rgb_32_train_fet rgb_filtered_32_train rgb_32_test_fet rgb_filtered_32_test_fet
  clear depth_32_train_fet depth_section_32_train_fet depth_32_test_fet depth_section_32_test_fet depth_filtered_32_train_fet depth_filtered_32_test_fet
