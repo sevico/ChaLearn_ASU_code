@@ -16,8 +16,20 @@ end
 % load('depth_tsn_test_avg_3.mat');
 % load('flow_tsn_train_avg_3.mat');
 % load('flow_tsn_test_avg_3.mat');
-train = [rgb_32_train_fet+rgb_section_32_train_fet+rgb_filtered_32_train,depth_32_train_fet+depth_section_32_train_fet+depth_filtered_32_train_fet,flow_32_train_fet,depth_tsn_train_avg_3+flow_tsn_train_avg_3];
-test = [rgb_32_test_fet+rgb_section_32_test_fet+rgb_filtered_32_test_fet,depth_32_test_fet+depth_section_32_test_fet+depth_filtered_32_test_fet,flow_32_test_fet,depth_tsn_test_avg_3+flow_tsn_test_avg_3];
+
+
+ [r1train,r1test]=ccaFuse(rgb_32_train_fet,rgb_filtered_32_train_fet,rgb_32_test_fet,rgb_filtered_32_test_fet);
+ [d1train,d1test]=ccaFuse(depth_32_train_fet,depth_section_32_train_fet,depth_32_test_fet,depth_section_32_test_fet);
+ [d3train,d3test]=ccaFuse(d1train,depth_filtered_32_train_fet,d1test,depth_filtered_32_test_fet);
+ clear d1train  d1test 
+ clear rgb_32_train_fet rgb_filtered_32_train rgb_32_test_fet rgb_filtered_32_test_fet
+ clear depth_32_train_fet depth_section_32_train_fet depth_32_test_fet depth_section_32_test_fet depth_filtered_32_train_fet depth_filtered_32_test_fet
+
+
+
+ train = [r1train,d3train,flow_32_train_fet,tsn_train_depth_avg_3+tsn_train_flow_avg_3];
+ test = [r1test,d3test,flow_32_test_fet,tsn_test_depth_avg_3+tsn_test_flow_avg_3];
+
 
 lb_test = zeros(6271,1);
 pr_test = double(zeros(6271,1))-99;
